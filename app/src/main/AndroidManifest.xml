@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.handymama">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/handy1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/handy1"
+        android:supportsRtl="true"
+        android:name=".MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegistrationScreen"
+            android:theme="@style/AppNoActionBarTheme3"></activity>
+        <activity android:name=".LoginScreen"
+            android:theme="@style/AppNoActionBarTheme3"/>
+        <activity
+            android:name=".Profile"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".MyBooking"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".PlaceOrderTwo"
+            android:theme="@style/AppNoActionBarTheme1" />
+        <activity
+            android:name=".PlaceOrderOne"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".MapScreen"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".CleaningService"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".BookingService"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".HandyMamaSelectingScreen"
+            android:theme="@style/AppNoActionBarTheme2" />
+        <activity
+            android:name=".SignUpScreen"
+            android:launchMode="singleTask"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".OnBoarding"
+            android:launchMode="singleTask"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppNoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="appgreen">#00C853</color>
+    <color name="appgivengreen">#3CE57C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#adb2bf</color>
+    <color name="violet">#8E24AA</color>
+    <color name="thickblue">#3949AB</color>
+    <color name="thickgrey">#616161</color>
+    <color name="red">#FF3D00</color>
+    <color name="gold">#FBC02D</color>
+
+    <color name="colorAccent1">#00ADC1</color>
+    <color name="textcolour">#11cfc5</color>
+
+    <color name="colorAccent2">#00ADC1</color>
+
+</resources>

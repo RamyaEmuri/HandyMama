@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/thickgrey</item>
+    </style>
+
+
+    <style name="AppNoActionBarTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/appgivengreen</item>
+        <item name="colorAccent">@color/thickgrey</item>
+    </style>
+
+    <style name="AppNoActionBarTheme1" parent="AppNoActionBarTheme">
+        <item name="colorAccent">@color/appgreen</item>
+    </style>
+
+    <style name="AppNoActionBarTheme3" parent="AppNoActionBarTheme">
+        <item name="colorAccent">@color/colorAccent2</item>
+    </style>
+
+    <style name="TextInputLayout" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/grey</item>
+
+    </style>
+
+    <style name="hintsize">
+        <item name="android:textSize">@dimen/size_14sp</item>
+
+    </style>
+
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+
+        <item name="tabIndicatorColor">@color/appgreen</item>
+        <item name="tabIndicatorHeight">@dimen/size_2</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/size_12sp</item>
+        <item name="android:textColor">@color/thickgrey</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

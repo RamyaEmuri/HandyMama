@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textViewSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_30"
+        android:layout_marginBottom="@dimen/size_30"
+        android:text="SKIP"
+        android:textColor="@color/appgreen"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSkip"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSignIn"
+        app:layout_constraintStart_toEndOf="@+id/textViewSkip"
+        app:layout_constraintTop_toTopOf="@+id/textViewSkip"
+        app:piv_animationType="none"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_radius="@dimen/size_3"
+        app:piv_selectedColor="@color/appgreen"
+        app:piv_unselectedColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_30"
+        android:text="SIGN IN"
+        android:textColor="@color/appgreen"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewSkip" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/size_250"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_50"
+        android:background="@drawable/buttonbackground"
+        android:text="Book a handymama"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pageIndicatorView"
+        app:layout_constraintCircleRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSignIn"
+        app:layout_constraintStart_toStartOf="@+id/textViewSkip" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerOnboarding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_40"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
